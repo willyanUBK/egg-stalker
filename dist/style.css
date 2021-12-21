@@ -133,27 +133,29 @@ div#menu > ul {
           flex-direction: row;
 }
 
-div#menu > ul > li {
+div#menu > ul > li.botaoMenu {
   margin-right: 20px;
   list-style: none;
-  padding: 0.2em 0.5em;
+}
+
+div#menu > ul > li.botaoMenu a {
   border-radius: 3px;
   -webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
           box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
   background-color: transparent;
   background-clip: padding-box;
+  padding: 0.2em;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-div#menu > ul > li:hover {
-  -webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.8);
-          box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.8);
+div#menu > ul > li.botaoMenu a:hover {
+  -webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.6);
+          box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.6);
 }
 
-div#menu > ul > li:active {
+div#menu > ul > li.botaoMenu a:active {
   background-color: #535353;
-}
-
-div#menu > ul > li:active > a {
   color: #EEEFF3;
 }
 
@@ -224,13 +226,6 @@ a {
 
 a:hover {
   text-decoration: underline;
-}
-
-a.botaoMenu {
-  font-size: 1em;
-  font-weight: bold;
-  text-decoration: none;
-  color: #535353;
 }
 
 main {
